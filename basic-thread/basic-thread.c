@@ -1,6 +1,6 @@
 /**
  * Basic thread program.
- * Vaclav Bohac (c) 2011
+ * Ashu Deshwal (c) 2019
  */
 #include <stdio.h>
 #include <stdlib.h>
