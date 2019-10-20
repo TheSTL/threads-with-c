@@ -9,8 +9,6 @@
 
 void *function1();
 void *function2();
-void *mainThread1();
-void *mainThread2();
 pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t mutex2 = PTHREAD_MUTEX_INITIALIZER;
 int counter1 = 0, counter2 = 0;
@@ -42,14 +40,6 @@ int main()
 
     return 0;
 }
-void *mainThread1() {
-    function1();
-}
-
-void *mainThread2() {
-    function2();
-}
-
 
 void *function1() {
     pthread_mutex_lock( &mutex1 );
